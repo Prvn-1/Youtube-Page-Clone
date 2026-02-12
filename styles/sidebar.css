@@ -1,0 +1,59 @@
+.sidebars{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 80px;
+  z-index: 200;
+  padding-top: 5px;
+}
+.sidebar-link{
+  
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.sidebar-link:hover{
+  background-color: rgb(233, 230, 230);
+}
+.sidebar-link img{
+  height: 24px;
+  margin-bottom: 5px;
+}
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .sidebars {
+    width: 60px;
+  }
+
+  .sidebar-link {
+    height: 90px;
+  }
+
+  .sidebar-link div {
+    font-size: 9px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .sidebars {
+    display: none; /* YouTube hides sidebar on mobile */
+  }
+}
